@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Витрина товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Каталог товаров</h1>
+        <div id="product-list" class="product-list">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Товар 1">
+                <h2>Товар 1</h2>
+                <p>Описание товара 1</p>
+                <button onclick="addToCart('Товар 1')">Добавить</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Товар 2">
+                <h2>Товар 2</h2>
+                <p>Описание товара 2</p>
+                <button onclick="addToCart('Товар 2')">Добавить</button>
+            </div>
+        </div>
+        <button id="checkout" onclick="sendOrder()">Отправить заказ</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
