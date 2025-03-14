@@ -3,28 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Витрина товаров</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Оружейная Витрина</title>
+    <style>
+        body {
+            background: url('https://source.unsplash.com/1600x900/?metal,texture') no-repeat center center/cover;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #555;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            border-color: #ff0000;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Добро пожаловать в оружейный магазин</h1>
     <div class="container">
-        <h1>Каталог товаров</h1>
-        <div id="product-list" class="product-list">
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="Товар 1">
-                <h2>Товар 1</h2>
-                <p>Описание товара 1</p>
-                <button onclick="addToCart('Товар 1')">Добавить</button>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="Товар 2">
-                <h2>Товар 2</h2>
-                <p>Описание товара 2</p>
-                <button onclick="addToCart('Товар 2')">Добавить</button>
-            </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/250x150/?gun" alt="Оружие">
+            <h3>Название оружия</h3>
+            <p>Описание оружия и его характеристики.</p>
         </div>
-        <button id="checkout" onclick="sendOrder()">Отправить заказ</button>
+        <div class="card">
+            <img src="https://source.unsplash.com/250x150/?pistol" alt="Пистолет">
+            <h3>Название пистолета</h3>
+            <p>Описание пистолета и его характеристики.</p>
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
