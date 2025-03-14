@@ -25,6 +25,7 @@
             width: 250px;
             border-radius: 8px;
             transition: transform 0.3s;
+            text-align: center;
         }
         .card:hover {
             transform: scale(1.05);
@@ -33,6 +34,18 @@
         img {
             width: 100%;
             border-radius: 5px;
+        }
+        .btn {
+            background: #ff0000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #cc0000;
         }
     </style>
 </head>
@@ -43,11 +56,13 @@
             <img src="https://source.unsplash.com/250x150/?gun" alt="Оружие">
             <h3>Название оружия</h3>
             <p>Описание оружия и его характеристики.</p>
+            <button class="btn">Добавить в корзину</button>
         </div>
         <div class="card">
             <img src="https://source.unsplash.com/250x150/?pistol" alt="Пистолет">
             <h3>Название пистолета</h3>
             <p>Описание пистолета и его характеристики.</p>
+            <button class="btn">Добавить в корзину</button>
         </div>
     </div>
 </body>
